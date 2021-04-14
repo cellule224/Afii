@@ -85,6 +85,8 @@ const transactionHistory = {
   tr_time: transactionTime
 };
 
+	
+//Add transaction to sender and receiver's History nodes 'user/{id}/history'
 admin.database().ref(`/users/${receiverUid}/user_trans_history/${transactionId}/`).set(transactionHistory);
 admin.database().ref(`/users/${senderUid}/user_trans_history/${transactionId}/`).set(transactionHistory);
 
