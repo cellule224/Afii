@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.nightonke:blurlockview:1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/blurlockview-1.0.0.aar/2d65a9fcd7569f8cd6633e92612d0104/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/blurlockview-1.0.0.aar/2d65a9fcd7569f8cd6633e92612d0104/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nightonke/blurlockview/1.0.0/f01ce0c37b685c96fa78d87d8c858143a29a3d41/blurlockview-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

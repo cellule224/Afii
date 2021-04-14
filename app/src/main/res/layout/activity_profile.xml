@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    tools:context="house.thelittlemountaindev.afii.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_back_press_from_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:text="Mon Compte"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="6dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_profile_qr"
+                        android:layout_width="320dp"
+                        android:layout_height="320dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_collapseMode="pin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/editTextColor"
+                        android:text="A scanner par la camera de l'appli de l'expediteur"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_acc_summary_to_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="312dp"
+                    android:visibility="gone">
+
+                    <include layout="@layout/card_account_summary"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_profile_personal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:drawableLeft="@drawable/ic_person_white_24dp"
+                        android:drawablePadding="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Informations Personelles"/>
+
+                    <TextView
+                        android:id="@+id/tv_profile_invite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:drawableLeft="@drawable/ic_share_white_24dp"
+                        android:drawablePadding="16dp"
+                        android:text="Inviter un ami"/>
+
+                    <TextView
+                        android:id="@+id/tv_profile_notifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:drawableLeft="@drawable/ic_notifications_white_24dp"
+                        android:drawablePadding="16dp"
+                        android:text="Notifications"/>
+
+                    <TextView
+                        android:id="@+id/tv_profile_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:drawableLeft="@drawable/ic_help_black_24dp"
+                        android:drawablePadding="16dp"
+                        android:text="Aide"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

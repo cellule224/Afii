@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_ev_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp"
+        android:elevation="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/iv_event_affiche"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/event_bg_holder"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="Concert 8th"
+                android:textColor="@color/textColorPrimary"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_ev_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textSize="16sp"
+        android:text="18 Sept"
+        style="@style/mBoldBigTitles"
+        android:background="@drawable/round_shape_btn"
+        android:elevation="10dp"/>
+
+</RelativeLayout>

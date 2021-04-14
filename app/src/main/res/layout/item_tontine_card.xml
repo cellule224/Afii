@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/card_bg_gradient">
+        
+        <TextView
+            android:id="@+id/tv_pool_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="500 000 USD"/>
+
+        <TextView
+            android:id="@+id/tv_pool_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pool_value"
+            android:textColor="@color/app_bg"
+            android:text="4/6"/>
+
+        <Switch
+            android:id="@+id/switch_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/tv_pool_members">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:civ_border_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:src="@mipmap/avataaars"/>
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:civ_border_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:src="@mipmap/avataaars1"/>
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:civ_border_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:src="@mipmap/avataaars2"/>
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:civ_border_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:src="@mipmap/avataaars3"/>
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:civ_border_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:src="@mipmap/ic_launcher_round"/>
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:civ_border_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:src="@mipmap/ic_launcher_round"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

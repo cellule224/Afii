@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_action_bar_replacemet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="top"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_back_press_from_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:text="Tapez le montant"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name_found_in_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_shape_btn"
+        android:textStyle="bold"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:drawableLeft="@drawable/ic_check_circle_white_24dp"
+        android:drawablePadding="2dp"
+        android:text="xReceiverx"
+        android:elevation="6dp"/>
+
+    <TextView
+        android:id="@+id/tv_textual_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <EditText
+        android:id="@+id/entered_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:minHeight="92dp"
+        android:maxLines="1"
+        android:maxLength="5"
+        android:hint="0000 USD"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <TableLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:showDividers="none">
+
+        <TableRow style="@style/keyboard_row"
+            android:showDividers="none">
+
+            <TextView
+                android:id="@+id/t9_key_1"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_one"/>
+
+            <TextView
+                android:id="@+id/t9_key_2"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_two"/>
+
+            <TextView
+                android:id="@+id/t9_key_3"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_three"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row"
+            android:showDividers="none">
+
+            <TextView
+                android:id="@+id/t9_key_4"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_four"/>
+
+            <TextView
+                android:id="@+id/t9_key_5"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_five"/>
+
+            <TextView
+                android:id="@+id/t9_key_6"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_six"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row"
+            android:showDividers="none">
+
+            <TextView
+                android:id="@+id/t9_key_7"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_seven"/>
+
+            <TextView
+                android:id="@+id/t9_key_8"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_eight"/>
+
+            <TextView
+                android:id="@+id/t9_key_9"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_nine"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row"
+            android:showDividers="none">
+
+            <TextView
+                android:id="@+id/t9_key_clear"
+                style="@style/keyboard_button"
+                android:text="@string/btn_clear"
+                android:textSize="26sp"
+                android:textColor="@color/editTextColor"/>
+
+            <TextView
+                android:id="@+id/t9_key_0"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_zero"/>
+
+            <TextView
+                android:id="@+id/t9_key_backspace"
+                style="@style/keyboard_button"
+                android:text="@string/btn_backspace"
+                android:textSize="26sp"
+                android:textColor="@color/editTextColor"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/btn_keypad_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="68dp"
+            android:layout_marginLeft="68dp"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_shape_btn"
+            android:text="Envoi"/>
+    </TableLayout>
+</LinearLayout>
+</LinearLayout>

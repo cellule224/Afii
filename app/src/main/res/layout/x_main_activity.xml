@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="58dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            app:civ_border="false"
+            android:src="@mipmap/profile_pic_holder"/>
+
+        <TextView
+            android:id="@+id/tv_name_solde_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            style="@style/mBoldBigTitles"
+            android:text="Bonjour, Alpha"/>
+
+        <ImageView
+            android:id="@+id/iv_main_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_notifications_white_24dp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/test_card_to_tontine"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="12dp"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_bg_gradient">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A7E8EE"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="12dp"
+                android:text="Solde:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="800 USD"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentLeft="true"
+            style="@style/mBoldBigTitles"/>
+
+        <TextView
+            android:id="@+id/btn_more_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/services"
+            android:textColor="#363636"
+            android:layout_marginRight="16dp"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_recharge"
+                android:layout_width="120dp"
+                android:layout_height="64dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mobile_topup"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="14sp"
+                        android:text="Recharge"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_tontine"
+                android:layout_width="120dp"
+                android:layout_height="64dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp"
+                android:layout_marginEnd="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tontine"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="14sp"
+                        android:text="Tontine"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_tickets"
+                android:layout_width="120dp"
+                android:layout_height="64dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp"
+                android:layout_marginEnd="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tickets"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="14sp"
+                        android:text="Tickets"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_more_services"
+                android:layout_width="120dp"
+                android:layout_height="64dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp"
+                android:layout_marginEnd="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tile"
+                        android:layout_marginTop="6dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="14sp"
+                        android:text="Services"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <house.thelittlemountaindev.afii.views.SwipeToSendButton
+        android:id="@+id/swipe_to_send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_main_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mMaterialButtons"
+            android:background="@drawable/rounded_corners_bg"
+            android:layout_marginRight="16dp"
+            android:text="Recevoir"/>
+
+        <Button
+            android:id="@+id/btn_main_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mMaterialButtons"
+            android:text="Envoyer"/>
+
+        <TextView
+            android:id="@+id/tv_main_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_main_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            style="@style/mBoldBigTitles"
+            android:layout_margin="16dp"
+            android:text="Activités"/>
+
+        <TextView
+            android:id="@+id/tv_open_transactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/ac"
+            android:textColor="#363636"
+            android:layout_marginEnd="16dp"
+            android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_recent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+</LinearLayout>

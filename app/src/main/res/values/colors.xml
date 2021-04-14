@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00B8D4</color>
+    <color name="colorPrimaryDark">#017385</color>
+    <color name="colorAccent">#FF6D00</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="textColorPrimaryDark">#3E3C41</color>
+
+    <color name="greyish">#e4e4e4</color>
+    <color name="app_bg">#C3F4FC</color>
+
+    <color name="gradientLight">#cbe3ef</color>
+    <color name="editTextColor">#455a64</color>
+
+    <!-- On Board profile setup-->
+    <color name="selected_dot">#4caf50</color>
+    <color name="idle_dot">#e0ffffff</color>
+    <color name="default_indicator">#99ffffff</color>
+</resources>
